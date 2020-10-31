@@ -35,7 +35,7 @@ V2ray = vmess,93.179.125.212,1707,chacha20-ietf-poly1305,"d9dfa5cf-8e13-4825-9f0
 
 # >本地分流规则
 [Rule]
-GEOIP,CN,全球规则
+GEOIP,CN,全球直连
 FINAL,漏网之鱼
 
 
