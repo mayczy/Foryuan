@@ -1,4 +1,4 @@
-hostname = api.m.jd.com, *.bilibili.com, iface?.iqiyi.com, ms.jr.jd.com, wapside.189.cn
+hostname = api.m.jd.com, ifac*.iqiyi.com, *.bilibili.com, wapside.189.cn
 
 
 # 京东  （api.m.jd.com）
