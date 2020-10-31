@@ -19,7 +19,7 @@ server_check_url=http://www.gstatic.com/generate_204
 #server=8.8.8.8
 
 [policy]
-static=节点选择, DIRECT, PROXY, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png
+static=全球规则, DIRECT, PROXY, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png
 static=全球直连, DIRECT, 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
 static=全球拦截, DIRECT, REJECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Reject.png
 static=漏网之鱼, DIRECT, 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
@@ -34,9 +34,9 @@ https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRl
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA&group=8J-bkSDlhajnkIPmi6bmiKo, tag=🛑 全球拦截, force-policy=全球拦截, update-interval=86400, opt-parser=false, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q&group=8J-bkSDlhajnkIPmi6bmiKo, tag=🛑 全球拦截, force-policy=全球拦截, update-interval=86400, opt-parser=false, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvR29vZ2xlQ04ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, force-policy=全球直连, update-interval=86400, opt-parser=false, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 节点选择, force-policy=节点选择, update-interval=86400, opt-parser=false, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 节点选择, force-policy=节点选择, update-interval=86400, opt-parser=false, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 节点选择, force-policy=节点选择, update-interval=86400, opt-parser=false, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 全球规则, force-policy=全球规则, update-interval=86400, opt-parser=false, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 全球规则, force-policy=全球规则, update-interval=86400, opt-parser=false, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 全球规则, force-policy=全球规则, update-interval=86400, opt-parser=false, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, force-policy=全球直连, update-interval=86400, opt-parser=false, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, force-policy=全球直连, update-interval=86400, opt-parser=false, enabled=true
 
