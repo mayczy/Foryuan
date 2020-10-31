@@ -20,9 +20,9 @@ server_check_url=http://www.gstatic.com/generate_204
 
 [policy]
 static=全球规则, DIRECT, PROXY, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png
-static=全球直连, DIRECT, 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
+static=全球直连, DIRECT, 全球规则, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
 static=全球拦截, DIRECT, REJECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Reject.png
-static=漏网之鱼, DIRECT, 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+static=漏网之鱼, DIRECT, 全球规则, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 
 [server_remote]
 
