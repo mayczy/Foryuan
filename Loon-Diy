@@ -68,9 +68,9 @@ enable = true
 
 # >远程脚本订阅
 [Remote Script]
-https://raw.githubusercontent.com/mayczy/Foryuan/main/Loon_js.conf, tag=京东&淘宝历史价格, enabled=true
-https://raw.githubusercontent.com/mayczy/Foryuan/main/Loon_cookie, tag=获取Cookie, enabled=true
-https://raw.githubusercontent.com/mayczy/Foryuan/main/Loon_task.conf, tag=定时任务集, enabled=true
+https://raw.githubusercontent.com/mayczy/Foryuan/master/Loon_js.conf, tag=京东&淘宝历史价格, enabled=true
+https://raw.githubusercontent.com/mayczy/Foryuan/master/Loon_cookie, tag=获取Cookie, enabled=true
+https://raw.githubusercontent.com/mayczy/Foryuan/master/Loon_task.conf, tag=定时任务集, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.lnscript, tag=什么值得买_每日签到, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.loonscript, tag=贴吧_每日签到, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.loon, tag=联通_签到与抽奖, enabled=true
