@@ -1,4 +1,4 @@
-hostname = api.m.jd.com, ifac*.iqiyi.com, *.bilibili.com, wapside.189.cn, i.meituan.com, *.video.qq.com, proapi.115.com
+hostname = api.m.jd.com, ifac*.iqiyi.com, *.bilibili.com, wapside.189.cn, i.meituan.com, *.video.qq.com, proapi.115.com, icbc1.wlphp.com:8444
 
 # 京东  （api.m.jd.com）
 http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东获取Cookie
@@ -20,3 +20,6 @@ http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=http
 
 # 115网盘 (proapi.115.com)
 http-request ^https?:\/\/proapi\.115\.com\/ios\/user\/takespc\? script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/115/115.js, tag=115网盘获取Cookie
+
+# 工银e生活(icbc1.wlphp.com:8444)
+http-request ^https:\/\/icbc1\.wlphp\.com:8444\/js\/api\/index\/signIn script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/icbc/icbc_cookie.js, requires-body=true, tag=工银e生活获取Cookie
