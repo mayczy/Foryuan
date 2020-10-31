@@ -46,8 +46,6 @@ https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list, polic
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list, policy=全球拦截, tag=常见关键字去广告-拦截, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list, policy=全球拦截, tag=常见应用内去广告-拦截, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list, policy=全球直连, tag=谷歌国内业务-直连, enabled=true
-https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, policy=Wifi无忧切换, tag=国外媒体-代理, enabled=true
-https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list, policy=Wifi无忧切换, tag=国外域名等规则(轻量级)-代理, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list, policy=全球直连, tag=国内域名-直连, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list, policy=全球直连, tag=国内云服务商IP段-直连, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Download/Download.list, policy=全球直连, tag=BT下载规则-直连, enabled=true
@@ -70,9 +68,9 @@ enable = true
 
 # >远程脚本订阅
 [Remote Script]
-https://raw.githubusercontent.com/mayczy/Foryuan/main/loon_task.conf, tag=定时任务集, enabled=true
-https://raw.githubusercontent.com/mayczy/Foryuan/main/loon_js.conf, tag=京东&淘宝历史价格, enabled=true
-https://raw.githubusercontent.com/mayczy/Foryuan/main/loon_cookie, tag=获取Cookie, enabled=true
+https://raw.githubusercontent.com/mayczy/Foryuan/main/Loon_js.conf, tag=京东&淘宝历史价格, enabled=true
+https://raw.githubusercontent.com/mayczy/Foryuan/main/Loon_cookie, tag=获取Cookie, enabled=true
+https://raw.githubusercontent.com/mayczy/Foryuan/main/Loon_task.conf, tag=定时任务集, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.lnscript, tag=什么值得买_每日签到, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.loonscript, tag=贴吧_每日签到, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.loon, tag=联通_签到与抽奖, enabled=true
