@@ -41,20 +41,20 @@ FINAL,漏网之鱼
 
 # >分流规则 远程订阅
 [Remote Rule]
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list, policy=全球直连, tag=本地网络-直连, enabled=true
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list, policy=全球直连, tag=去广告白名单-直连, enabled=true
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list, policy=全球拦截, tag=常见关键字去广告-拦截, enabled=true
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list, policy=全球拦截, tag=常见应用内去广告-拦截, enabled=true
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list, policy=全球直连, tag=谷歌国内业务-直连, enabled=true
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, policy=全球规则, tag=国外媒体-代理, enabled=true
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, policy=全球规则, tag=国外域名等规则-代理, enabled=true
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list, policy=全球直连, tag=国内域名-直连, enabled=true
-#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list, policy=全球直连, tag=国内云服务商IP段-直连, enabled=true
-#https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Download/Download.list, policy=全球直连, tag=BT下载规则-直连, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list, policy=全球直连, tag=本地网络-直连, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list, policy=全球直连, tag=去广告白名单-直连, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list, policy=全球拦截, tag=常见关键字去广告-拦截, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list, policy=全球拦截, tag=常见应用内去广告-拦截, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list, policy=全球直连, tag=谷歌国内业务-直连, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, policy=全球规则, tag=国外媒体-代理, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, policy=全球规则, tag=国外域名等规则-代理, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list, policy=全球直连, tag=国内域名-直连, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list, policy=全球直连, tag=国内云服务商IP段-直连, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Download/Download.list, policy=全球直连, tag=BT下载规则-直连, enabled=true
 
-https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list, policy=全球拦截, tag=全球拦截, enabled=true
-https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Proxy.list, policy=全球规则, tag=全球规则, enabled=true
-https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list, policy=全球直连, tag=全球直连, enabled=true
+#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list, policy=全球拦截, tag=全球拦截, enabled=true
+#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Proxy.list, policy=全球规则, tag=全球规则, enabled=true
+#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list, policy=全球直连, tag=全球直连, enabled=true
 
 # >本地URL复写
 [URL Rewrite]
