@@ -57,10 +57,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Domain.list, policy=全球规则, tag=全球规则, enabled=true
 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/China/China.list, policy=全球直连, tag=全球直连, enabled=true
 
-#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list, policy=全球拦截, tag=全球拦截, enabled=true
-#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Proxy.list, policy=全球规则, tag=全球规则, enabled=true
-#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list, policy=全球直连, tag=全球直连, enabled=true
-
 # >本地URL复写
 [URL Rewrite]
 
