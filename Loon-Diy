@@ -42,9 +42,9 @@ FINAL,漏网之鱼
 # >分流规则 远程订阅
 [Remote Rule]
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list, policy=全球直连, tag=本地网络-直连, enabled=true
-https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list, policy=全球直连, tag=去广告白名单-直连, enabled=true
-https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list, policy=全球拦截, tag=常见关键字去广告-拦截, enabled=true
-https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list, policy=全球拦截, tag=常见应用内去广告-拦截, enabled=true
+#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list, policy=全球直连, tag=去广告白名单-直连, enabled=true
+#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list, policy=全球拦截, tag=常见关键字去广告-拦截, enabled=true
+#https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list, policy=全球拦截, tag=常见应用内去广告-拦截, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list, policy=全球直连, tag=谷歌国内业务-直连, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, policy=全球规则, tag=国外媒体-代理, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, policy=全球规则, tag=GFW全量列表-代理, enabled=true
@@ -56,6 +56,10 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GlobalMedia/GlobalMedia.list, policy=全球规则, tag=国外媒体, enabled=true
 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Domain.list, policy=全球规则, tag=全球规则, enabled=true
 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/China/China.list, policy=全球直连, tag=全球直连, enabled=true
+
+#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list, policy=全球拦截, tag=常见去广告, enabled=true
+#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Proxy.list, policy=全球规则, tag=全球规则, enabled=true
+#https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list, policy=全球直连, tag=全球直连, enabled=true
 
 # >本地URL复写
 [URL Rewrite]
@@ -85,6 +89,8 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/did
 # >插件(类似Surge的模块)
 [Plugin]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/Advertising/Advertising.plugin, tag=blackmatrix7实时版, enabled=true
+https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Loon/Plugin/General.plugin, tag=General, enabled=true
+https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Loon/Plugin/Host.plugin, tag=Host, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.lnplugin, tag=什么值得买_去广告, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_lite.loonplugin, tag=知乎助手_去广告, enabled=true
 https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Loon/Plugin/Block/YouTubeAdsTest.plugin, tag=YouTube去广告, enabled=true
