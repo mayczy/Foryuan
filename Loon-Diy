@@ -95,6 +95,7 @@ https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Loon/Plugin/Ge
 https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Loon/Plugin/Host.plugin, tag=Host, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.lnplugin, tag=什么值得买_去广告, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_lite.loonplugin, tag=知乎助手_去广告, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.lnplugin, tag=哔哩哔哩_去广告, enabled=true
 https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Loon/Plugin/Block/YouTubeAdsTest.plugin, tag=YouTube去广告, enabled=true
 https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.tf.plugin, tag=BoxJS_TF版, enabled=true
 https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/AutoPolicy/auto-policy.plugin, tag=SSID, enabled=false
