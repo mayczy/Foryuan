@@ -20,8 +20,8 @@ V2ray = vmess,93.179.125.212,1707,chacha20-ietf-poly1305,"d9dfa5cf-8e13-4825-9f0
 
 # >机场订阅
 [Remote Proxy]
+比特云 = https://subscribe.bityun.org/api/v1/client/subscribe?token=91ac64177d6e64a588039de6b44980a4
 
-# >策略组
 [Proxy Group]
 
 全球规则 = select,V2ray
