@@ -25,7 +25,7 @@ static=全球拦截, DIRECT, REJECT, img-url=https://raw.githubusercontent.com/K
 static=漏网之鱼, DIRECT, 全球规则, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 
 [server_remote]
-https://subscribe.bityun.org/api/v1/client/subscribe?token=91ac64177d6e64a588039de6b44980a4, tag=比特云, img_url=https://raw.githubusercontent.com/Orz-3/mini/master/tgpic.png, update-interval=86400, opt-parser=false, enabled=true
+https://subscribe.bityun.org/api/v1/client/subscribe?token=91ac64177d6e64a588039de6b44980a4, tag=比特云, update-interval=86400, opt-parser=false, enabled=true
 
 [filter_remote]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WhiteList/WhiteList.list, tag=白名单规则, force-policy=全球直连, update-interval=86400, opt-parser=false, enabled=true
