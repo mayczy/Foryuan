@@ -1,12 +1,12 @@
 hostname = api.m.jd.com, lkyl.dianpusoft.cn, ifac*.iqiyi.com, *.bilibili.com, wapside.189.cn, i.meituan.com, icbc1.wlphp.com:8444
 
-# 京东  （api.m.jd.com）
+# 京东 （api.m.jd.com）
 http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东获取Cookie
 
-# 京东  （lkyl.dianpusoft.cn）
+# 京东小窝 （lkyl.dianpusoft.cn）
 http-request ^https\:\/\/lkyl\.dianpusoft\.cn\/api\/user\-info\/login script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/ddxw.cookie.js, requires-body=true, timeout=10, tag=京东小窝Cookie
 
-# 爱奇艺   （ifac*.iqiyi.com）
+# 爱奇艺 （ifac*.iqiyi.com）
 http-request ^https?:\/\/iface(\d)?\.iqiyi\.com\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺获取Cookie
 
 # Bilibli (m.bilibili.com, api.bilibili.com)
@@ -18,5 +18,5 @@ http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=htt
 # 美团 （i.meituan.com）
 http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, tag=美团获取Cookie
 
-# 工银e生活(icbc1.wlphp.com:8444)
+# 工银e生活 (icbc1.wlphp.com:8444)
 http-request ^https:\/\/icbc1\.wlphp\.com:8444\/js\/api\/index\/signIn script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/icbc/icbc_cookie.js, requires-body=true, tag=工银e生活获取Cookie
