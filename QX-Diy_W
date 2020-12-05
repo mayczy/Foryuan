@@ -75,9 +75,6 @@ FINAL,漏网之鱼
 # 京东获取Cookie
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-#东东小窝cookie
-^https\:\/\/lkyl\.dianpusoft\.cn\/api\/user\-info\/login url script-request-body https://raw.githubusercontent.com/whyour/hundun/master/quanx/ddxw.cookie.js
-
 # 京东价格提醒(By toulanboy)
 ^https:\/\/apapia-history\.manmanbuy\.com\/ChromeWidgetServices\/WidgetServices\.ashx url script-request-body https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js
 
