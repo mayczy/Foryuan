@@ -47,7 +47,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/did
 https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.tf.conf, tag=BoxJS, update-interval=86400, opt-parser=false, enabled=true
 
 [server_local]
-vmess=93.179.125.212:1707, method=aes-128-gcm, password=d9dfa5cf-8e13-4825-9f0b-009f36006bb6, fast-open=false, udp-relay=true, tag=v2ray
+vmess=93.179.125.212:7078, method=aes-128-gcm, password=f87b6857-cf91-4272-bc13-aae39713c8a0, fast-open=false, udp-relay=false, tag=v2ray
 
 [filter_local]
 # 知乎去广告
