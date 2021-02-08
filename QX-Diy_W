@@ -78,14 +78,11 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 ^https:\/\/apapia-history\.manmanbuy\.com\/ChromeWidgetServices\/WidgetServices\.ashx url script-request-body https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js
 
 # 宠汪汪强制为别人助力
-^https:\/\/draw\.jdfcloud\.com\/\/pet\/enterRoom\/h5\?invitePin=.*(&inviteSource=task_invite&shareSource=\w+&inviteTimeStamp=\d+&openId=\w+)?&reqSource=weapp|^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/pet\/helpFriend\?friendPin url script-request-header https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_help.js
+^https:\/\/draw\.jdfcloud\.com\/\/common\/pet\/enterRoom\/h5\?invitePin=.*(&inviteSource=task_invite&shareSource=\w+&inviteTimeStamp=\d+&openId=\w+)?&reqSource=weapp|^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/pet\/helpFriend\?friendPin url script-request-header https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_help.js
 
 # 宠汪汪赛跑
 ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= url script-response-body https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
 ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= url script-request-header https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
-
-# 聚宝盆投狗粮辅助
-^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox url script-response-body https://gitee.com/lxk0301/jd_scripts/raw/master/jd_petTreasureBox.js
 
 # 京喜农场Cookie
 ^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.cookie.js
@@ -101,9 +98,6 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 # 爱奇艺Cookie
 ^https?:\/\/iface\d\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
-# 工银e生活Cookie
-^https:\/\/icbc1\.wlphp\.com:8444\/js\/api\/index\/signIn url script-request-body https://raw.githubusercontent.com/barrym-chen/Script/master/icbc/icbc_cookie.js
 
 [task_local]
 # 京东签到
@@ -132,9 +126,6 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 # 中国电信签到
 20 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, tag=电信营业厅签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10000.png, enabled=true
-
-# 工银e生活签到
-10 10 8 * * * https://raw.githubusercontent.com/barrym-chen/Script/master/icbc/icbc_sign.js, tag=工银e生活签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/icbc.png, enabled=true
 
 # 切换会话
 # 访问: https://8.8.8.8/home管理
