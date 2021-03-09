@@ -34,15 +34,10 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=全球直连, force-policy=全球直连, update-interval=86400, opt-parser=false, enabled=true
 
 [rewrite_remote]
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.qxrewrite, tag=开屏去广告, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Advertising/Advertising.conf, tag=blackmatrix7实时版, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_lite.qxrewrite, tag=知乎助手_去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=NoAD, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买_去广告, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.qxrewrite, tag=哔哩哔哩_去广告, update-interval=86400, opt-parser=false, enabled=true
-https://jdsharedresourcescdn.azureedge.net/jdresource/lxk0301_cookies.conf, tag=lxk_Cookie, update-interval=86400, opt-parser=true, enabled=true
+ps://jdsharedresourcescdn.azureedge.net/jdresource/lxk0301_cookies.conf, tag=lxk_Cookie, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.qxrewrite, tag=贴吧_获取Cookie, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.qxrewrite, tag=联通_获取cookie, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.qxrewrite, tag=滴滴出行_获取Cookie, enabled=true
 https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.tf.conf, tag=BoxJS, update-interval=86400, opt-parser=false, enabled=true
 
@@ -77,9 +72,6 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 # 京东价格提醒(By toulanboy)
 ^https:\/\/apapia-history\.manmanbuy\.com\/ChromeWidgetServices\/WidgetServices\.ashx url script-request-body https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js
-
-# 宠汪汪强制为别人助力
-# 宠汪汪赛跑
 
 # 京喜农场APP种子Token
 ^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
@@ -148,6 +140,7 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 0 0 0 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_blueCoin.js, tag=东东超市兑换奖品, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxc.png, enabled=true
 10 7 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_bean_home.js, tag=领京豆额外奖励, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png, enabled=true
 2 9 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_bean_change.js, tag=京豆变动通知, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+
 # 京东签到
 5,10 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true
 
@@ -168,9 +161,6 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 # 爱奇艺签到
 18 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/iQIYI.png, enabled=true
-
-# 联通签到
-19 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.js, tag=联通_签到与抽奖, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10010.png, enabled=true
 
 # 中国电信签到
 20 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, tag=电信营业厅签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10000.png, enabled=true
