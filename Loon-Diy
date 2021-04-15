@@ -16,11 +16,9 @@ test-timeout = 3
 
 # >手动添加的节点
 [Proxy]
-V2ray = vmess,93.179.125.212,7078,chacha20-ietf-poly1305,"f87b6857-cf91-4272-bc13-aae39713c8a0",transport:tcp
 
 # >机场订阅
 [Remote Proxy]
-比特云 = https://subscribe.bityun.org/api/v1/client/subscribe?token=91ac64177d6e64a588039de6b44980a4
 
 [Proxy Group]
 
