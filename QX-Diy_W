@@ -28,31 +28,22 @@ static=漏网之鱼, DIRECT, 全球规则, img-url=https://raw.githubusercontent
 
 [filter_remote]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WhiteList/WhiteList.list, tag=白名单规则, force-policy=全球直连, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list, tag=NoAD规则, force-policy=全球拦截, update-interval=86400, opt-parser=false, enabled=false
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list, tag=NoAD规则, force-policy=全球拦截, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GlobalMedia/GlobalMedia.list, tag=全球媒体规则, force-policy=全球规则, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Proxy/Proxy.list, tag=全球规则, force-policy=全球规则, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=全球直连, force-policy=全球直连, update-interval=86400, opt-parser=false, enabled=true
 
 [rewrite_remote]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=NoAD, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=false
 https://jdsharedresourcescdn.azureedge.net/jdresource/lxk0301_cookies.conf, tag=lxk_Cookie, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.qxrewrite, tag=贴吧_获取Cookie, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.qxrewrite, tag=滴滴出行_获取Cookie, enabled=true
 https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.tf.conf, tag=BoxJS, update-interval=86400, opt-parser=false, enabled=true
 
 [server_local]
-vmess=93.179.125.212:7078, method=aes-128-gcm, password=f87b6857-cf91-4272-bc13-aae39713c8a0, fast-open=false, udp-relay=false, tag=v2ray
 
 [filter_local]
-# 知乎去广告
-DOMAIN,118.89.204.198,REJECT
-DOMAIN-SUFFIX,118.89.204.198,REJECT
-DOMAIN-KEYWORD,118.89.204.198,REJECT
-IP-CIDR,118.89.204.198/32,REJECT
-USER-AGENT,AVOS*,REJECT
-DOMAIN-SUFFIX,appcloud2.zhihu.com,REJECT
-DOMAIN-SUFFIX,appcloud2.in.zhihu.com,REJECT
 GEOIP,CN,全球直连
 FINAL,漏网之鱼
 
@@ -61,11 +52,11 @@ FINAL,漏网之鱼
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
 # 京东历史价格
-^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
+#^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
 # 淘宝历史价格
-^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
-^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+#^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+#^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
 # 京东获取Cookie
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
@@ -89,6 +80,9 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 ^https?:\/\/iface\d\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 [task_local]
+0 0-18/6 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_carnivalcity.js, tag=京东手机狂欢城, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 0,1-23/3 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js, tag=5G超级盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 0 0 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_xtg.js, tag=手机尚学季, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 30,31 20-23/1 9,12 3 * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live_redrain.js, tag=超级直播间红包雨, enabled=true
 10-20/5 12 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_live.js, tag=京东直播, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 30 8 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxd.js, tag=京小兑, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_jxd.png, enabled=true
@@ -164,10 +158,6 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 # 中国电信签到
 20 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, tag=电信营业厅签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10000.png, enabled=true
-
-# 切换会话
-# 访问: https://8.8.8.8/home管理
-0 12 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js, tag=切换会话,img-url=https://raw.githubusercontent.com/Orz-3/task/master/box.png, enabled=false
 
 [mitm]
 passphrase = B1D2B066
