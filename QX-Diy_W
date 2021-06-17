@@ -48,30 +48,6 @@ GEOIP,CN,全球直连
 FINAL,漏网之鱼
 
 [rewrite_local]
-# 微信去广告
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
-
-# 京东历史价格
-#^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
-
-# 淘宝历史价格
-#^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
-#^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
-
-# 京东获取Cookie
-https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-
-# 美团Cookie
-^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ - script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
-
-# Bilibili获取Cookie
-^https:\/\/(www|live)\.bilibili\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
-
-# 中国电信Cookie
-^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo - script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
-
-# 爱奇艺Cookie
-^https?:\/\/iface\d\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 [task_local]
 
@@ -101,5 +77,5 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 [mitm]
 passphrase = B1D2B066
-hostname = mp.weixin.qq.com, api.m.jd.com, draw.jdfcloud.com, jdjoy.jd.com, wq.jd.com, lkyl.dianpusoft.cn, i.meituan.com, *.smzdm.com, ifac*.iqiyi.com, *.bilibili.com, act.10010.com, m.client.10010.com, trade-acs.m.taobao.com, wapside.189.cn, icbc1.wlphp.com:8444
+hostname =*.smzdm.com
 p12 = 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
