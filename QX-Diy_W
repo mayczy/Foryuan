@@ -25,7 +25,7 @@ static=全球拦截, DIRECT, REJECT, img-url=https://raw.githubusercontent.com/K
 static=漏网之鱼, DIRECT, 全球规则, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 
 [server_remote]
-https://maylx.com/s/maylx.com_0d9ed7cbc096f5526e630fbe28433d8a, tag=Xray, update-interval=86400, opt-parser=true, enabled=true
+https://maylx.com/s/maylx.com_d15b0ca08ab44e99c75265321def25e7, tag=Xray, update-interval=86400, opt-parser=true, enabled=true
 
 [filter_remote]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WhiteList/WhiteList.list, tag=白名单规则, force-policy=全球直连, update-interval=86400, opt-parser=false, enabled=true
